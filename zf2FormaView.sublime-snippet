@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+<?php
+\$form = \$this->form;
+
+
+\$form->setAttribute('${1:controler}', \$this->url('${2:ruta}', array('controller' => '${3:controller}', 'action' => '${4:akcija}')));
+\$form->setAttribute('method', '${5:metod}');
+\$form->setAttribute('class', '${6:klasa_html_forme}');
+\$form->setAttribute('role', 'form');
+\$form->prepare(); 
+
+   
+
+
+
+echo \$this->form()->openTag(\$form); 
+
+
+
+echo \$this->formRow(\$form->get('${7:polje_forme}')); 
+
+
+echo \$this->form()->closeTag();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zfFormaView</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

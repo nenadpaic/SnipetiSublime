@@ -1,0 +1,49 @@
+<snippet>
+	<content><![CDATA[
+ public function ${1:naziv_akcije}Action(){
+         
+     
+        \$form = new ${2:klasa_forme}();
+        
+        \$request = \$this->getRequest();
+      
+        if(\$request->isPost()){
+            \$sm = \$this->getServiceLocator();
+            //Ako je potreban adapter skini komentar
+            //\$adapter = \$sm->get('Zend\Db\Adapter\Adapter');
+            \$form->setInputFilter(new ${3:FilterKlasa}($adapter, $sm));
+            \$form->setData($request->getPost());
+            if(\$form->isValid()){
+             
+               unset(\$data['submit']);
+               unset(\$data['confirm']);
+               unset(\$data['captcha']);
+               unset(\$data['secret']);
+
+               
+
+
+                
+              
+               
+                
+                
+               
+                
+                
+               
+               
+                
+            }
+        }
+        
+        
+        return new ViewModel(array('form' => \$form));
+        
+    }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zfFormController</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

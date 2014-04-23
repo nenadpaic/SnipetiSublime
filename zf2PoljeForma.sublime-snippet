@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$this->add(array(
+       'name' => '${1:naziv_polja}',
+       'type' => '${2:tip}',
+       'attributes' => array(
+         'class' => '${3:klasa_html}',
+         'required' => ${4:true},
+       ),
+       'options' => array(
+           'label' => '${5:label}',
+       )
+   ));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zfPoljeF</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,50 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+namespace ${1:namespace}\Model;
+
+use Zend\Db\TableGateway\TableGateway;
+
+
+/**
+ * Description of User
+ *
+ * @author nenadpaic
+ */
+class ${2:naziv_klase} {
+    
+    private \$table;
+    private \$adapter;
+    
+    public function __construct(\$adapter) {
+        \$this->adapter = \$adapter;
+    }
+    public function ${4:getTableYouNeed}(){
+        
+    
+       
+        if(!\$this->_table){
+            \$this->_table = new TableGateway(
+                    '${5:table_in_base}',
+                    \$this->adapter
+                    );
+        }
+        
+       return \$this->_table;
+    }
+    
+    
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zfTableGW</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

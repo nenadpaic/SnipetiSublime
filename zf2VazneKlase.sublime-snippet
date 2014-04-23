@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+use Zend\Authentication\AuthenticationService;
+use Zend\Authentication\Result;
+use Zend\Authentication\AuthenticationService;
+use Zend\Authentication\Storage\Session as SessionStorage;
+use Zend\Db\Adapter\Adapter as DbAdapter;
+use Zend\Authentication\Adapter\DbTable as AuthAdapter;
+use Zend\View\Model\ViewModel;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zfVazneKlase</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
